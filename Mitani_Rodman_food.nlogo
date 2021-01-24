@@ -48,7 +48,7 @@ to go
       set day day + 1 ] ] [
     set hour hour + 1 ]
 
-  ; stop the simulation if no defenders or fedefenders AND advance time
+  ; stop the simulation if no defenders AND advance time
   if not any? defenders [ stop ]
   if not any? patches with [ pcolor = green ] [ stop ]
 
